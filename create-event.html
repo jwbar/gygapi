@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Event</title>
+</head>
+<body>
+    <h1>Create an Event</h1>
+    <form method="post" action="post-event.php">
+        <label for="dateTime">Date & Time:</label>
+        <input type="datetime-local" id="dateTime" name="dateTime" required><br><br>
+
+        <label for="productId">Product ID:</label>
+        <input type="text" id="productId" name="productId" required><br><br>
+
+        <label for="cutoffSeconds">Cutoff Seconds:</label>
+        <input type="number" id="cutoffSeconds" name="cutoffSeconds" required><br><br>
+
+        <label for="vacancies">Vacancies:</label>
+        <input type="number" id="vacancies" name="vacancies" required><br><br>
+
+        <label for="currency">Currency:</label>
+        <input type="text" id="currency" name="currency" value="EUR" required><br><br>
+
+        <h3>Prices</h3>
+        <label for="adultPrice">Adult Price:</label>
+        <input type="number" id="adultPrice" name="prices[ADULT]" required><br><br>
+
+        <label for="childPrice">Child Price:</label>
+        <input type="number" id="childPrice" name="prices[CHILD]" required><br><br>
+
+        <input type="submit" name="submit" value="Create Event">
+    </form>
+</body>
+</html>

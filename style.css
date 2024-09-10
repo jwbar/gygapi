@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /* Ensures the Admin Dashboard and Logout are on opposite sides */
+    align-items: center; /* Vertically align the elements */
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd; /* Add a border below the header */
+    width: 100%; /* Make the container full width */
+    box-sizing: border-box;
+}
+
+/* Ensure that the logout button is aligned to the right */
+.logout-button {
+    margin-left: auto;
+}
+
+/* Make sure the dashboard-container is displayed below the container */
+.dashboard-container {
+    max-width: 1200px;
+    margin: 20px auto; /* Add some margin at the top */
+    display: flex;
+    flex-direction: row; /* Arrange the content in a row (form on left, list on right) */
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Event form styles */
+.event-form, .event-list {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    flex: 1;
+}
+
+/* Make the event form smaller */
+.event-form {
+    max-width: 300px;
+}
+
+/* Event list styles */
+.event-list {
+    max-width: 800px;
+    margin-left: 20px;
+}
+
+h2, h3, h4 {
+    color: #333;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="number"], input[type="datetime-local"] {
+    padding: 5px;
+    width: calc(100% - 160px);
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.event-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.event-item:last-child {
+    border-bottom: none;
+}
+
+.event-item a {
+    color: #007BFF;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.event-item a:hover {
+    text-decoration: underline;
+}
